@@ -195,9 +195,6 @@
   .float-end {
     float: inline-end;
   }
-  .float-left {
-    float: left;
-  }
   .container {
     width: 100%;
     @media (width >= 40rem) {
@@ -228,20 +225,8 @@
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
   }
-  .mt-\[2\] {
-    margin-top: 2;
-  }
-  .mt-\[2v\] {
-    margin-top: 2v;
-  }
-  .mt-\[2vh\] {
-    margin-top: 2vh;
-  }
   .mt-\[4vh\] {
     margin-top: 4vh;
-  }
-  .mt-\[vh\] {
-    margin-top: vh;
   }
   .mb-4 {
     margin-bottom: calc(var(--spacing) * 4);
@@ -252,9 +237,6 @@
   .flex {
     display: flex;
   }
-  .table {
-    display: table;
-  }
   .h-75 {
     height: calc(var(--spacing) * 75);
   }
@@ -264,14 +246,8 @@
   .w-\[50\%\] {
     width: 50%;
   }
-  .border-collapse {
-    border-collapse: collapse;
-  }
   .cursor-pointer {
     cursor: pointer;
-  }
-  .resize {
-    resize: both;
   }
   .flex-col {
     flex-direction: column;
@@ -320,9 +296,6 @@
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 1px;
   }
-  .bg-amber-600 {
-    background-color: var(--color-amber-600);
-  }
   .bg-blue-400 {
     background-color: var(--color-blue-400);
   }
@@ -350,9 +323,6 @@
   .px-\[2vw\] {
     padding-inline: 2vw;
   }
-  .py-1 {
-    padding-block: calc(var(--spacing) * 1);
-  }
   .py-1\.5 {
     padding-block: calc(var(--spacing) * 1.5);
   }
@@ -372,17 +342,9 @@
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
   }
-  .text-5xl {
-    font-size: var(--text-5xl);
-    line-height: var(--tw-leading, var(--text-5xl--line-height));
-  }
   .text-6xl {
     font-size: var(--text-6xl);
     line-height: var(--tw-leading, var(--text-6xl--line-height));
-  }
-  .text-xl {
-    font-size: var(--text-xl);
-    line-height: var(--tw-leading, var(--text-xl--line-height));
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
@@ -397,9 +359,6 @@
   }
   .text-red-600 {
     color: var(--color-red-600);
-  }
-  .text-red-700 {
-    color: var(--color-red-700);
   }
   .text-red-800 {
     color: var(--color-red-800);
@@ -419,16 +378,9 @@
   .text-white {
     color: var(--color-white);
   }
-  .underline {
-    text-decoration-line: underline;
-  }
   .shadow-2xl {
     --tw-shadow: 0 25px 50px -12px var(--tw-shadow-color, rgb(0 0 0 / 0.25));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
   .hover\:bg-red-400 {
     &:hover {
@@ -447,12 +399,6 @@
     @media (width >= 40rem) {
       font-size: var(--text-5xl);
       line-height: var(--tw-leading, var(--text-5xl--line-height));
-    }
-  }
-  .sm\:text-xl {
-    @media (width >= 40rem) {
-      font-size: var(--text-xl);
-      line-height: var(--tw-leading, var(--text-xl--line-height));
     }
   }
 }
@@ -530,11 +476,6 @@
   inherits: false;
   initial-value: 0 0 #0000;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
@@ -554,7 +495,6 @@
       --tw-ring-offset-width: 0px;
       --tw-ring-offset-color: #fff;
       --tw-ring-offset-shadow: 0 0 #0000;
-      --tw-outline-style: solid;
     }
   }
 }

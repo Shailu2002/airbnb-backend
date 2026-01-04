@@ -3,8 +3,8 @@
 const express = require("express");
 const userRouter = express.Router();
 const homeController = require('../Controllers/store/store');
-userRouter.get("/", homeController.HomeAdded);
+userRouter.get("/", homeController.index);
 userRouter.get("/favourite", homeController.favourite);
 userRouter.get("/Bookings", homeController.Bookings);
-userRouter.get("/index",homeController.index);
+userRouter.get("/homes", homeController.HomeAdded);
 module.exports = userRouter;
