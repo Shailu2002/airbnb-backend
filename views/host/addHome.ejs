@@ -1,0 +1,18 @@
+ <%- include('../partials/head') %>
+</head>
+<body>
+    <%- include('../partials/header') %>
+   <main class="shadow-2xl m-[7vh] px-[2vw] py-[10vh]  text-center">
+    <h1 class="text-2xl font-bold text-red-600">Register your home on AirBnb</h1>
+     <form class="flex flex-col gap-2 justify-center items-center" action="/host/add-home" method="POST">
+    <input class="border py-1.5 w-[50%]  rounded-md" type="text" name="houseName" placeholder="Enter name of your house" />
+    <input name="price" class="border py-1.5 w-[50%]   rounded-md" type="text"   placeholder="Enter Price Per Night"/>
+    <input name="location" class="border py-1.5 w-[50%]  rounded-md" type="text"   placeholder="Enter Location of your House"/>
+     <input name="ratings" class="border py-1.5 w-[50%]  rounded-md" type="text"   placeholder="Enter Ratings"/>
+       <input name="photo" class="border py-1.5 w-[50%]  rounded-md" type="text"   placeholder="enter photo URL"/>
+    <input class="bg-green-500 text-white rounded-md py-2 px-4" type="submit" value="Submit">
+    </form>
+   </main>
+   
+</body>
+</html>
