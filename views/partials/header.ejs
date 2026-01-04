@@ -1,9 +1,10 @@
     <header>
-         <nav class="bg-red-400 text-white justify-start py-4 px-4 gap-4 flex">
-           <a class="<%= currentPage ==='Home' ? 'bg-red-500' :'hover:bg-red-400' %>" href="/store/homes">Home</a>
-           <a  class="<%= currentPage ==='AddHome' ? 'bg-red-500' :'hover:bg-red-400' %>" href="/host/add-home">Add Home</a>
-             <a  class="<%= currentPage ==='favourite' ? 'bg-red-500' :'hover:bg-red-400' %>" href="/store/favourite">favourite</a>
-               <a  class="<%= currentPage ==='Bookings' ? 'bg-red-500' :'hover:bg-red-400' %>" href="/store/Bookings">Bookings</a>
-                 <a  class="<%= currentPage ==='AddHome' ? 'bg-red-500' :'hover:bg-red-400' %>" href="/host/add-home"></a>
+         <nav class="bg-red-400 text-white justify-between py-4 px-4 gap-4 flex">
+            <a class="<%= currentPage ==='index' ? ' border-b border-b-slate-500' :'hover:bg-red-400' %>  text-2xl font-extrabold text-black" href="/store/">Airbnb</a>
+           <a class="<%= currentPage ==='Home' ? 'border-b border-b-slate-500' :'hover:bg-red-400' %>" href="/store/homes">User Home</a>
+             <a  class="<%= currentPage ==='favourite' ? 'border-b border-b-slate-500' :'hover:bg-red-400' %>" href="/store/favourite">favourite</a>
+               <a  class="<%= currentPage ==='Bookings' ? 'border-b border-b-slate-500' :'hover:bg-red-400' %>" href="/store/Bookings">Bookings</a>
+                 <a  class="<%= currentPage ==='AddHome' ? 'border-b border-b-slate-500' :'hover:bg-red-400' %>" href="/host/add-home">Add Home</a>
+                   <a  class="<%= currentPage ==='Homehost' ? 'border-b border-b-slate-500' :'hover:bg-red-400' %>" href="/host/homes"> Host Homes</a>
       </nav>
     </header>

@@ -4,7 +4,14 @@ const path = require('path');
 const rootDir = require('../utilities/pathUtil');
 const filepath = path.join(rootDir, "data", "homes.json");
 module.exports = class Home {
-  constructor(houseName, price, location, ratings, photo) {
+  id;
+  houseName;
+  price;
+  location; 
+  ratings;
+  photo;
+  constructor(id, houseName, price, location, ratings, photo) {
+    this.id = id;
     this.houseName = houseName;
     this.price = price;
     this.location = location;

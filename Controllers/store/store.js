@@ -18,6 +18,15 @@ exports.index = (req, res, next) => {
   });
 };
 
+exports.homeDetail = (req, res, next) => {
+  const homeId = req.params.homeId;
+  console.log(homeId);
+  res.render('./store/home-detail', {
+    pageTitle: "Home detail",
+    currentPage:"Home"
+  });
+};
+
 exports.Bookings = (req, res, next) => {
   Home.fetchAll((data) => {
     res.render("./store/Bookings", {

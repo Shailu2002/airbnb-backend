@@ -7,4 +7,5 @@ userRouter.get("/", homeController.index);
 userRouter.get("/favourite", homeController.favourite);
 userRouter.get("/Bookings", homeController.Bookings);
 userRouter.get("/homes", homeController.HomeAdded);
+userRouter.get("/homes/:homeId",homeController.homeDetail);
 module.exports = userRouter;

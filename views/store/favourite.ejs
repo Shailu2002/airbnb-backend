@@ -7,13 +7,14 @@
       <div class="flex mt-4 flex-wrap gap-2.5 justify-evenly">
           <% registeredHome.forEach(home=> {%>
               <div class="w-75 shadow-2xl rounded-lg border-b h-75"> <img src="https://www.liveawilderlife.com/wp-content/uploads/2020/10/airbnb-asheville-treehouse.jpg" />
+                  <div class="float-end"> <a href="/store/homes/<%=home.id%>">Details</a></div>
              <div><%=home.houseName%></div>
              <div><%=home.location%></div>
              <div class="flex flex-row justify-around">
               <div class="text-red-900 font-bold"><%=home.price%>/night</div>
              <div>⭐<%=home.ratings%></div>
              </div>
-              <button class="rounded-md cursor-pointer bg-green-500 px-2 ml-2">Book</button>
+              <button class="rounded-md cursor-pointer bg-green-500 px-2 ml-2">Select</button>
               <button class="rounded-md cursor-pointer  float-end font-bold text-2xl px-2 ml-2">x</button>
              </div>
           <% }) %>
