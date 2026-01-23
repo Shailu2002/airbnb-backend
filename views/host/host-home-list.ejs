@@ -1,25 +1,27 @@
 <%- include('../partials/head') %>
-  </head>
-  <body>
-     <%- include('../partials/header') %>
-    <main class="container" >
+      </head>
+      <body>
+      <%- include('../partials/header') %>
+      <main class="container" >
       <h1 class="text-2xl sm:text-4xl text-center font-extrabold ">Home list added</h1>
       <div class="flex mt-4 flex-wrap gap-2.5 justify-evenly">
-          <% registeredHome.forEach(home=> {%>
-              <div class="w-75 shadow-2xl rounded-lg border-b h-75"> <img src="https://www.liveawilderlife.com/wp-content/uploads/2020/10/airbnb-asheville-treehouse.jpg" />
-             <div><%=home.houseName%></div>
-             <div><%=home.location%></div>
-             <div class="flex flex-row justify-around">
-              <div class="text-red-900 font-bold"><%=home.price%>/night</div>
-             <div>⭐<%=home.ratings%></div>
-             </div>
-              <button class="rounded-md bg-red-500 cursor-pointer px-2 ml-2">Delete</button>
-              <button class="rounded-md bg-yellow-700 cursor-pointer px-2 ml-2">Edit</button>
-
-             </div>
-          <% }) %>
+      <% registeredHome.forEach(home=> {%>
+      <div class="w-75 shadow-2xl rounded-lg border-b h-75"> 
+      <img src="<%=home.photo %>" />
+      <div><%=home.houseName%></div>
+      <div><%=home.location%></div>
+      <div class="flex flex-row justify-around">
+      <div class="text-red-900 font-bold"><%=home.price%>/night</div>
+      <div>⭐<%=home.ratings%></div>
+      </div>
+      <div class="flex">
+      <a href="/host/edit-home/<%=home.id %>?editing=true" class="rounded-md bg-yellow-700 cursor-pointer px-2 ml-2">Edit</a>
+      <a href="/host/delete-home/<%=home.id %>" class="rounded-md bg-red-500 cursor-pointer px-2 ml-2">Delete</a>
+      </div>
+      </div>
+      <% }) %>
       </div> 
-    </main>
-  </body>
-  <script src="https://kit.fontawesome.com/7a7a8d234e.js" crossorigin="anonymous"></script>
+      </main>
+      </body>
+      <script src="https://kit.fontawesome.com/7a7a8d234e.js" crossorigin="anonymous"></script>
 </html>
